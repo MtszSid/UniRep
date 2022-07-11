@@ -1,0 +1,59 @@
+﻿@model Zadanie_1.Models.Pasek.PasekModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (var form = Html.BeginForm())
+{
+<div>
+    Imie:@Html.TextBoxFor(m => m.Imie)
+</div>
+<div>
+    Nazwisko:@Html.TextBoxFor(m => m.Nazwisko)
+</div>
+<div>
+    Przedmiot:@Html.TextBoxFor(m => m.Przedmiot)
+</div>
+<div>
+    Prowadzący:@Html.TextBoxFor(m => m.Prowadzacy)
+</div>
+<div>
+    Data:@Html.EditorFor(m => m.Data)
+</div>
+<div>
+    Zadanie 1:@Html.EditorFor(m => m.Zad1)
+</div>
+<div>
+    Zadanie 2:@Html.EditorFor(m => m.Zad2)
+</div>
+<div>
+    Zadanie 3:@Html.EditorFor(m => m.Zad3)
+</div>
+<div>
+    Zadanie 4:@Html.EditorFor(m => m.Zad4)
+</div>
+<div>
+    Zadanie 5:@Html.EditorFor(m => m.Zad5)
+</div>
+<div>
+    Zadanie 6:@Html.EditorFor(m => m.Zad6)
+</div>
+<div>
+    Zadanie 7:@Html.EditorFor(m => m.Zad7)
+</div>
+<div>
+    Zadanie 8:@Html.EditorFor(m => m.Zad8)
+</div>
+<div>
+    Zadanie 9:@Html.EditorFor(m => m.Zad9)
+</div>
+<div>
+    Zadanie 10:@Html.EditorFor(m => m.Zad10)
+</div>
+
+<button>Stwórz</button>    
+
+}
+

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UserData" Class="UserDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-CFDUH25\MSSQLSERVER2;Initial Catalog=UserData;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="UserDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[USER]" Member="USERs">
+    <Type Name="USER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NChar(60) NOT NULL" CanBeNull="false" />
+      <Association Name="USER_PASSWORD" Member="PASSWORD" ThisKey="ID" OtherKey="ID" Type="PASSWORD" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PASSWORD" Member="PASSWORDs">
+    <Type Name="PASSWORD">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Hash" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Salt" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="NumberOfHashes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="USER_PASSWORD" Member="USER" ThisKey="ID" OtherKey="ID" Type="USER" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

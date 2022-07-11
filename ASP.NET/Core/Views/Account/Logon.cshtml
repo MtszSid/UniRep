@@ -1,0 +1,24 @@
+﻿@model Core.Models.AccountLogonModel
+@{
+    ViewData["Title"] = "Logon";
+}
+
+<h1>Logon</h1>
+@using (var form = Html.BeginForm())
+{
+    <div>
+        Nazwa: @Html.TextBoxFor(m => m.UserName)
+    </div>
+    <div>
+        Hasło: @Html.PasswordFor(m => m.Password)
+    </div>
+    <div>
+        @Model.Message
+    </div>
+    <button>
+        LogIn
+    </button>
+}
+
+
+

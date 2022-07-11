@@ -1,0 +1,70 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="number" id="personID" />
+
+            <button id="invokeFetchGet">Get</button>
+        </div>
+        <div>
+            Imie: <input type="text" id="Name" />
+        </div>
+        <div>
+            Nazwisko: <input type="text" id="Surname" />
+        </div>
+        <div>
+            Nazwisko: <input type="date" id="Date" />
+        </div>
+        <div>
+            <button id="invokeFetchPost">Post</button>
+        </div>
+        <div>
+            <textarea id="resultArea" cols="80" rows="25">
+ </textarea>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            window.invokeFetchPost.onclick = function () {
+                var examplePerson = {
+                    Name: document.getElementById('Name').value,
+                    Surname: document.getElementById('Surname').value,
+                    BirthDate: document.getElementById('Date').value
+                };
+                // https://developer.mozilla.org/enUS/docs/Web/API/Fetch_API/Using_Fetch
+                fetch('/api/Zad1', {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify(examplePerson)
+                })
+                    .then(function (result) {
+                        return result.text();
+                    })
+                    .then(function (result) {
+                        window.resultArea.innerHTML = result;
+                    });
+            };
+            window.invokeFetchGet.onclick = function () {
+                // https://developer.mozilla.org/enUS/docs/Web/API/Fetch_API/Using_Fetch
+                fetch('/api/Zad1/' + document.getElementById('personID').value, {
+                    method: 'GET',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                })
+                    .then(function (result) {
+                        return result.text();
+                    })
+                    .then(function (result) {
+                        window.resultArea.innerHTML = result;
+                    });
+            };
+        });
+    </script>
+</body>
+</html>

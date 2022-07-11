@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Deklaracja";
+    var qs = this.Request.QueryString;
+}
+
+<h2>Deklaracja</h2>
+
+<style>
+    table{
+        border: 2px solid black;
+    }
+    td {
+        border: 2px solid black;
+        width: 60px;
+    }
+</style>
+
+<table>
+    <tr>
+        <td colspan="3">@qs["Imie"]  @qs["Nazwisko"]</td>
+        <td colspan="3">Przedmiot: @qs["Przedmiot"]</td>
+        <td colspan="2">Prowadzący: @qs["Prowadzacy"]</td>
+        <td colspan="3">Data: @qs["Data"]</td>
+    </tr>
+    <tr>
+        <td>Zadanie:</td>
+        @for (int i = 1; i <= 10; i++)
+        {
+            <td>
+                @i.
+            </td>
+        }
+    </tr>
+    <tr>
+        <td></td>
+        @for (int i = 1; i <= 10; i++)
+        {
+            <td>
+                @{
+                    String s = qs["Zad" + i];
+                    if (String.IsNullOrEmpty(s))
+                {
+                    s = "0";
+                }     
+                }
+                @s
+            </td>
+        }
+    </tr>
+</table>

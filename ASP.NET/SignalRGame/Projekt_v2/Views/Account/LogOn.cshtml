@@ -1,0 +1,93 @@
+﻿@model Projekt_v2.Models.Account.AccountLogOnMdel
+@{
+    ViewBag.Title = "LogOn";
+}
+
+@Styles.Render("~/Content/LogOn.css")
+<h2>LogOn</h2>
+
+<div class="layout">
+
+    <div class="LogOnCell">
+        <h3>LogIn</h3>
+        @using (var form = Html.BeginForm("LogOn", "Account", FormMethod.Post))
+        {
+            <div class="LogInGrid">
+                <div class="LogInGridLabel1">
+                    User Name:
+                </div>
+                <div class="LogInGridInput1">
+                    @Html.TextBoxFor(m => m.UserName)
+                </div>
+                <div class="LogInGridLabel2">
+                    Password:
+                </div>
+                <div class="LogInGridInput2">
+                    @Html.PasswordFor(m => m.Password)
+                </div>
+            </div>
+            <div div class="message">
+                @Model.Message
+            </div>
+            <button>
+                LogIn
+            </button>
+        }
+    </div>
+    <div class="Register">
+        <h3>Register:</h3>
+        @using (var form = Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            <div class="RegisterGrid">
+                <div class="RegisterGridLabel1">
+                    User Name:
+                </div>
+                <div class="RegisterGridInput1">
+                    @Html.TextBoxFor(m => m.UserName)
+                </div>
+                <div class="RegisterGridLabel2">
+                    Password:
+                </div>
+                <div class="RegisterGridInput2">
+                    @Html.PasswordFor(m => m.Password)
+                </div>
+                <div class="RegisterGridLabel3">
+                    Repeat password:
+                </div>
+                <div class="RegisterGridInput3">
+                    @Html.PasswordFor(m => m.PasswordRetyped)
+                </div>
+                <div class="RegisterGridLabel4">
+                    Email:
+                </div>
+                <div class="RegisterGridInput4">
+                    @Html.TextBoxFor(m => m.Email)
+                </div>
+            </div>
+            <div class="message">
+                @Model.Message
+            </div>
+            <button>
+                Register
+            </button>
+        }
+    </div>
+    <div class="Anonymous">
+        <h3>Anonymous:</h3>
+        @using (var form = Html.BeginForm("LogOnAnonymous", "Account", FormMethod.Post))
+        {
+            <div class="AnonGrid">
+                <div class="AnonGridLabel1">
+                    User Name:
+                </div>
+                <div class="AnonGridInput1">
+                    @Html.TextBoxFor(m => m.UserName)
+                </div>
+            </div>
+            <button>
+                Join
+            </button>
+
+        }
+    </div>
+</div>

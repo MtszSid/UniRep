@@ -1,0 +1,53 @@
+﻿@model Zadanie3.Models.Home.HomeIndexModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (var form = Html.BeginForm())
+{
+    <div>Check Box: @Html.CheckBoxFor(m => m.Checked)</div>
+    <div>Text Box: @Html.TextBoxFor(m => m.textBox)</div>
+    <div>TextArea: @Html.TextAreaFor(m => m.textArea)</div>
+    <div>
+        DropDownList: @Html.DropDownListFor(
+   m => m.DropDownListFor,
+   new SelectList(new string[] { "Ala", "Adam", "Antoni", "Agata" }))
+    </div>
+    <div>Password: @Html.PasswordFor(m => m.Password)</div>
+    <div>@Html.RadioButtonFor(m => m.RadioButton, "a") a</div>
+    <div>@Html.RadioButtonFor(m => m.RadioButton, "b") b</div>
+    <div>@Html.RadioButtonFor(m => m.RadioButton, "c") c</div>
+    <button>submit</button>
+}
+
+@Html.ActionLink("This is a secret", "Secret")
+@{ 
+    string s = "<b> Jakiś napis </b>";
+} 
+<hr />
+<div>
+    CheckBox: @Model.Checked
+</div>
+<div>
+    TextBox: @Model.textBox
+</div>
+<div>
+    TextArea: @Model.textArea
+</div>
+<div>
+    DropDownListFor: @Model.DropDownListFor
+</div>
+<div>
+    Password: @Model.Password
+</div>
+<div>
+    RadioButton: @Model.RadioButton
+</div>
+<div>
+    @s
+</div>
+<div>
+    @Html.Raw(s)
+</div>
+

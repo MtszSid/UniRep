@@ -1,0 +1,36 @@
+﻿@model Zadanie_1.Models.Students.StudentsIndexModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@{
+    var grid = new WebGrid(canPage: true, rowsPerPage: 10);
+    grid.Bind(source: Model.Students.Items,
+              rowCount: Model.Students.TotalCount, autoSortAndPage: false);
+}
+<div>
+    @Html.ActionLink("Nowy", "New")
+</div>
+<div>
+    @grid.Table(
+            columns: grid.Columns(
+                grid.Column("Imie", "Imię"),
+                grid.Column("Nazwisko", "Nazwisko"),
+                grid.Column("DataUrodzenia", "Data Urodzenia", a => a.DataUrodzenia.ToString("dd/MM/yyyy")),
+                grid.Column("Miejscowosc", "Miejscowość", a => (a.Miejscowosc != null ? a.Miejscowosc.Nazwa : "")),
+                grid.Column(format:
+                    item =>
+                        Html.ActionLink("Edycja", "Edit",
+                        new { id = item.ID }), canSort: false),
+                grid.Column(format:
+                    item =>
+                        Html.ActionLink("Usuń", "Delete",
+                        new { id = item.ID }), canSort: false)
+            )
+        )
+</div>
+<div>
+    @grid.Pager(WebGridPagerModes.All, "<<", "<", ">", ">>")
+</div>

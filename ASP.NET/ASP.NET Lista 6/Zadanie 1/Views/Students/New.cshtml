@@ -1,0 +1,18 @@
+﻿@model Zadanie_1.Models.Students.StudentsNewModel
+
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New</h2>
+
+@using (var form = Html.BeginForm())
+{
+    <div>Imie: @Html.TextBoxFor(m => m.Name)</div>
+    <div>Nazwisko: @Html.TextBoxFor(m => m.Surname)</div>
+    <div>Data Urodzenia: @Html.EditorFor(m => m.BirthDate) </div>
+    <div>Miejsce zamieszkania: @Html.TextBoxFor(m => m.CityName) </div>
+    <div>
+        <button name="btn" value="cancel">Anuluj</button> <button name="btn" value="submit">Zapisz</button></div>
+}
+

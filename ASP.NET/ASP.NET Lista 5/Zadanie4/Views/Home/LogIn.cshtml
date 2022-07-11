@@ -1,0 +1,22 @@
+﻿@model Zadanie4.Models.HomeLogInModel
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<h2>LogIn</h2>
+
+@using(var form = Html.BeginForm()){
+    <div>
+        Nazwa: @Html.TextBoxFor(m => m.UserName)
+    </div>
+    <div>
+        Hasło: @Html.PasswordFor(m => m.Password)
+    </div>
+    <div>
+        @Model.Message
+    </div>
+    <button>
+        LogIn
+    </button>
+}
+

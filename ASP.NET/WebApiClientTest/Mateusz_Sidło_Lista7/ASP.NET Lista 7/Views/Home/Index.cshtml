@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <div>
+        <button id="invokeFetch">Invoke with fetch</button>
+    </div>
+    <div>
+        <textarea id="resultArea" cols="80" rows="25"></textarea>
+    </div>
+</div>
+<script>
+    var examplePerson = {
+        ID: 12,
+        Name: 'foo bar'
+    };
+    window.addEventListener('load', function () {
+        window.invokeFetch.onclick = function () {
+            // https://developer.mozilla.org/enUS/docs/Web/API/Fetch_API/Using_Fetch
+            fetch('/api/Zad2', {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json',
+                },
+                body: JSON.stringify(examplePerson)
+            })
+                .then(function (result) {
+                    return result.text();
+                })
+                .then(function (result) {
+                    window.resultArea.innerHTML = result;
+                });
+        };
+    });
+</script>
