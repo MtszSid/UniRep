@@ -2,7 +2,7 @@
 **/out
 **/target
 **/.idea
-.class
+*.class
 
 #vscode artifacts
 **/.vscode
