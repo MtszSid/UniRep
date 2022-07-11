@@ -4,6 +4,8 @@
 **/.idea
 *.class
 
+**/.cccc
+
 #vscode artifacts
 **/.vscode
 
