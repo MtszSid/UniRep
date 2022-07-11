@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zad 2</name>
+    </assembly>
+    <members>
+        <member name="T:Zad_2.Grid">
+            <summary>
+            Klasa implementująca dwuwymiarową siatkę
+            </summary>
+        </member>
+        <member name="P:Zad_2.Grid.Item(System.Int32)">
+            <summary>
+            Indekser jednowymiarowy
+            </summary>
+            <param name="x">Współrzędna wierszowa</param>
+            <returns>elementy z jednego wiersza</returns>
+        </member>
+        <member name="P:Zad_2.Grid.Item(System.Int32,System.Int32)">
+            <summary>
+            Indekser dwuwymiarowy
+            </summary>
+            <param name="x">Współrzędna wierszowa</param>
+            <param name="y">Współrzędna kolumnowa</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zad_2.Program.Main(System.String[])">
+            <summary>
+            Główna funkcja programu
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>

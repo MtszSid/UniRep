@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <context-param>
+        <param-name>Name</param-name>
+        <param-value>Mateusz Sidło</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Email</param-name>
+        <param-value>314380@uwr.edu.pl</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>indexJSP</servlet-name>
+
+        <jsp-file>/index.jsp</jsp-file>
+        <init-param>
+            <param-name>DefaultDate</param-name>
+            <param-value>2000-01-01</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>indexJSP</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+

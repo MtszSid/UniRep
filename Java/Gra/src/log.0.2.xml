@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1250" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-11-16T13:35:21.827259500Z</date>
+  <millis>1637069721827</millis>
+  <nanos>259500</nanos>
+  <sequence>0</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Imie: Alan</message>
+</record>
+<record>
+  <date>2021-11-16T13:35:23.575461500Z</date>
+  <millis>1637069723575</millis>
+  <nanos>461500</nanos>
+  <sequence>1</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/2 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-16T13:35:26.061555Z</date>
+  <millis>1637069726061</millis>
+  <nanos>555000</nanos>
+  <sequence>2</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/4 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-16T13:35:28.209135600Z</date>
+  <millis>1637069728209</millis>
+  <nanos>135600</nanos>
+  <sequence>3</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/8 (Za mało)</message>
+</record>
+<record>
+  <date>2021-11-16T13:35:34.650655200Z</date>
+  <millis>1637069734650</millis>
+  <nanos>655200</nanos>
+  <sequence>4</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 2/9 (Zgadłeś)</message>
+</record>
+<record>
+  <date>2021-11-16T13:35:34.666153100Z</date>
+  <millis>1637069734666</millis>
+  <nanos>153100</nanos>
+  <sequence>5</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Wygrał: Alan</message>
+</record>
+</log>

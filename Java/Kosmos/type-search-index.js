@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"kosmos","l":"Energia"},{"p":"kosmos","l":"Krzyz"},{"p":"<Unnamed>","l":"Main"},{"p":"kosmos","l":"Planeta"},{"p":"kosmos","l":"Planeta.Rodzaj"},{"p":"kosmos","l":"Zodiak"},{"p":"kosmos","l":"Zywiol"}];updateSearchResults();

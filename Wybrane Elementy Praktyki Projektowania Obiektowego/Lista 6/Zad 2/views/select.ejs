@@ -1,0 +1,9 @@
+<!-- select.ejs -->
+<form>
+    <% options.forEach( option => { %>
+
+        <input type="radio" id='<%= option.value %>' name='<%=name%>' value='<%= option.value %>'>
+        <label for='<%= option.value %>'> <%= option.text %></label><br>
+    
+    <% }) %>
+</form>

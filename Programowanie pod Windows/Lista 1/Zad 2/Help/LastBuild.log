@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2020.3.6.0" projectFile="C:\from D\Vsual studio projekty\Programowanie pod windows\Lista 1\Zad 2\sand.shfbproj" started="17.03.2021 22:46:52">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    C:\from D\Vsual studio projekty\Programowanie pod windows\Lista 1\Zad 2
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.7.2&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2020.3.6.0
+Copyright &#169; 2006-2020, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\from D\Vsual studio projekty\Programowanie pod windows\Lista 1\Zad 2\Zad 2.csproj
+    Found project &#39;C:\from D\Vsual studio projekty\Programowanie pod windows\Lista 1\Zad 2\Zad 2.csproj&#39;
+    Last step completed in 00:00:00,0030
+</buildStep>
+<buildStep step="Failed">
+
+SHFB: Error BE0065: BUILD FAILED: Could not load SDK Resolver. A manifest file exists, but the path to the SDK Resolver DLL file could not be found. Manifest file path &#39;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\SdkResolvers\Microsoft.Build.NuGetSdkResolver\Microsoft.Build.NuGetSdkResolver.xml&#39;. SDK resolver path: C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\CommonExtensions\Microsoft\NuGet\Microsoft.Build.NuGetSdkResolver.dll  C:\from D\Vsual studio projekty\Programowanie pod windows\Lista 1\Zad 2\Zad 2.csproj
+   w Microsoft.Build.Shared.ProjectFileErrorUtilities.VerifyThrowInvalidProjectFile(Boolean condition, String errorSubCategoryResourceName, BuildEventFileInfo projectFile, Exception innerException, String resourceName, Object[] args)
+   w Microsoft.Build.BackEnd.SdkResolution.SdkResolverLoader.TryAddAssemblyFromManifest(String pathToManifest, String manifestFolder, List`1 assembliesList, ElementLocation location)
+   w Microsoft.Build.BackEnd.SdkResolution.SdkResolverLoader.FindPotentialSdkResolvers(String rootFolder, ElementLocation location)
+   w Microsoft.Build.BackEnd.SdkResolution.SdkResolverLoader.LoadResolvers(LoggingContext loggingContext, ElementLocation location)
+   w Microsoft.Build.BackEnd.SdkResolution.SdkResolverService.Initialize(LoggingContext loggingContext, ElementLocation location)
+   w Microsoft.Build.BackEnd.SdkResolution.SdkResolverService.ResolveSdk(Int32 submissionId, SdkReference sdk, LoggingContext loggingContext, ElementLocation sdkReferenceLocation, String solutionPath, String projectPath, Boolean interactive)
+   w Microsoft.Build.BackEnd.SdkResolution.CachingSdkResolverService.&lt;&gt;c__DisplayClass3_0.&lt;ResolveSdk&gt;b__0(String key)
+   w System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   w Microsoft.Build.BackEnd.SdkResolution.CachingSdkResolverService.ResolveSdk(Int32 submissionId, SdkReference sdk, LoggingContext loggingContext, ElementLocation sdkReferenceLocation, String solutionPath, String projectPath, Boolean interactive)
+   w Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1&amp; projects, SdkResult&amp; sdkResult, Boolean throwOnFileNotExistsError)
+   w Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult&amp; sdkResult)
+   w Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+   w Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+   w Microsoft.Build.Evaluation.Evaluator`4.Evaluate(ILoggingService loggingService, BuildEventContext buildEventContext)
+   w Microsoft.Build.Evaluation.Project.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   w Microsoft.Build.Evaluation.Project.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   w Microsoft.Build.Evaluation.Project.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   w Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+   w SandcastleBuilder.Utils.MSBuild.MSBuildProject..ctor(String projectFile)
+   w SandcastleBuilder.Utils.BuildEngine.BuildProcess.ValidateDocumentationSources()
+   w SandcastleBuilder.Utils.BuildEngine.BuildProcess.Build()
+
+</buildStep>
+</shfbBuild>

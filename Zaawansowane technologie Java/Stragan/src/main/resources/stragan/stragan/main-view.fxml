@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stragan.stragan.MainController">
+   <children>
+      <VBox alignment="CENTER" layoutX="250.0" layoutY="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="134.0" text="Wybierz tryb:" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="addItemButton" alignment="CENTER" mnemonicParsing="false" onAction="#onAddNewItem" prefHeight="50.0" prefWidth="300.0" text="Dodaj towar">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onSale" prefHeight="50.0" prefWidth="300.0" text="Rozpocznij sprzedaż">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onByu" prefHeight="50.0" prefWidth="300.0" text="Rozpocznij zakup">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></Button>
+            <Button alignment="CENTER" layoutX="160.0" layoutY="133.0" mnemonicParsing="false" onAction="#OnState" prefHeight="50.0" prefWidth="300.0" text="Stan">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

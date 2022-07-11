@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <context-param>
+        <param-name>Name</param-name>
+        <param-value>Mateusz Sidło</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Email</param-name>
+        <param-value>314380@uwr.edu.pl</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>com.example.zakupy.HelloServlet</servlet-class>
+
+    </servlet>
+
+    <servlet>
+        <servlet-name>zakupyJSP</servlet-name>
+        <jsp-file>/zakupy.jsp</jsp-file>
+
+        <init-param>
+            <param-name>TYP-PIECZ</param-name>
+            <param-value>Pieczywo</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-WARZ</param-name>
+            <param-value>Warzywa</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-OWOC</param-name>
+            <param-value>Owoce</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-MIESO/W</param-name>
+            <param-value>Mięso i wędliny</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-NABIA</param-name>
+            <param-value>Nabiał</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-PRZEK</param-name>
+            <param-value>Przekąski</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-SLOD</param-name>
+            <param-value>Słodycze</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-NAPO</param-name>
+            <param-value>Napoje</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-CHEM</param-name>
+            <param-value>Chemia</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-HIGIE</param-name>
+            <param-value>Higiena</param-value>
+        </init-param>
+        <init-param>
+            <param-name>TYP-INNE</param-name>
+            <param-value>Inne</param-value>
+        </init-param>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/zakupy</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>zakupyJSP</servlet-name>
+        <url-pattern>/zakupy.jsp</url-pattern>
+    </servlet-mapping>
+</web-app>

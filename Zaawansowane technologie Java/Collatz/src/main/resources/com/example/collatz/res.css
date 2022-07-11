@@ -1,0 +1,18 @@
+.button {
+    -fx-padding: 10;
+    -fx-background-color: #CCFF99;
+}
+
+.TextField{
+    -fx-padding: 10;
+    -fx-background-color: #DDEEBB;
+    -fx-border-color: #5f7244;
+}
+
+#pane{
+    -fx-background-color: #AABB88;
+}
+
+#errorMessage{
+    -fx-text-fill: #a22641;
+}

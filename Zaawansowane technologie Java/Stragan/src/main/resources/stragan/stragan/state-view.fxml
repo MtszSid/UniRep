@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stragan.stragan.StateController">
+    <children>
+        <SplitPane dividerPositions="0.9020100502512562" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <items>
+                  <SplitPane dividerPositions="0.6003460207612457" prefHeight="160.0" prefWidth="200.0">
+                      <items>
+                  <ScrollPane prefHeight="359.0" prefWidth="358.0">
+                     <content>
+                                  <TableView fx:id="ProductsTable" prefHeight="518.0" prefWidth="344.0">
+                                      <columns>
+                                          <TableColumn prefWidth="142.0" text="Nazwa">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="name" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn prefWidth="72.0" text="Skrót">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="shortName" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn prefWidth="53.0" text="Ilość">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="amount" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn prefWidth="74.0" text="Cena za jedn.">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="totalPrice" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn prefWidth="16.0" />
+                                      </columns>
+                                  </TableView>
+                     </content>
+                  </ScrollPane>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                              <children>
+                                  <GridPane prefHeight="378.0" prefWidth="228.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                      <children>
+                                          <Label prefHeight="17.0" prefWidth="80.0" text="Koniec okresu:" GridPane.rowIndex="1">
+                                              <GridPane.margin>
+                                                  <Insets right="10.0" />
+                                              </GridPane.margin>
+                                          </Label>
+                                          <DatePicker fx:id="BeginningDate" GridPane.columnIndex="1" />
+                                          <DatePicker fx:id="EndDate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Początek okresu: " />
+                                          <Label text="Saldo: " GridPane.rowIndex="2" />
+                                          <Label fx:id="TotalPriceLabel" text="0.0 zł" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Button mnemonicParsing="false" onAction="#GenerateTotalPrice" text="Generuj saldo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label text="Skrót: " GridPane.rowIndex="5" />
+                              <Label text="Nowa Cena: " GridPane.rowIndex="6" />
+                              <Button fx:id="CommitButton" mnemonicParsing="false" onAction="#OnCommit" text="Aktualizuj" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <ComboBox fx:id="ShortNames" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="NewPriceTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                      </children>
+                                  </GridPane>
+                              </children>
+                          </AnchorPane>
+                      </items>
+                  </SplitPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="612.0">
+                    <children>
+                        <Button fx:id="CancelButton" cancelButton="true" layoutX="68.0" layoutY="7.0" mnemonicParsing="false" onAction="#OnCancel" text="Powrót" AnchorPane.leftAnchor="60.0" />
+                    </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

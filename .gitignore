@@ -1,0 +1,21 @@
+#out Java 
+**/out
+**/target
+**/.idea
+.class
+
+#vscode artifacts
+**/.vscode
+
+#zipped files
+*.zip
+
+#vs artifactis
+**/.vs
+**/packages
+**/bin
+**/obj
+
+**/Debug
+.exe
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="windows-1250" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-11-18T13:57:42.258953100Z</date>
+  <millis>1637243862258</millis>
+  <nanos>953100</nanos>
+  <sequence>0</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Imie: Alan</message>
+</record>
+<record>
+  <date>2021-11-18T13:57:44.188463400Z</date>
+  <millis>1637243864188</millis>
+  <nanos>463400</nanos>
+  <sequence>1</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/2 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-18T13:57:47.793924Z</date>
+  <millis>1637243867793</millis>
+  <nanos>924000</nanos>
+  <sequence>2</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/4 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-18T13:57:50.717733100Z</date>
+  <millis>1637243870717</millis>
+  <nanos>733100</nanos>
+  <sequence>3</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/8 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-18T13:57:53.823140300Z</date>
+  <millis>1637243873823</millis>
+  <nanos>140300</nanos>
+  <sequence>4</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/9 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-18T13:57:56.105646600Z</date>
+  <millis>1637243876105</millis>
+  <nanos>646600</nanos>
+  <sequence>5</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/10 (Zgadłeś)</message>
+</record>
+<record>
+  <date>2021-11-18T13:57:56.107648900Z</date>
+  <millis>1637243876107</millis>
+  <nanos>648900</nanos>
+  <sequence>6</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Wygrał: Alan</message>
+</record>
+</log>

@@ -1,0 +1,72 @@
+body{
+    text-align: center;
+    align-content: center;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background: #deffcf;
+}
+
+h1{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    min-width:100vh;
+}
+
+img#calendar{
+    display: flex;
+    align-self: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100px;
+    width: 80px;
+}
+
+div#bottom {
+
+    bottom: 10px;
+
+    left: 0;
+    right: 0;
+    height: 50px;
+
+    align-content: center;
+    text-align: center;
+}
+
+.biorhythms{
+    align-self: center;
+
+    margin-top: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: solid black 2px;
+
+    border-collapse: collapse;
+
+}
+
+.tableRow{
+    border: solid black 2px;
+}
+
+.tableCell{
+    border: solid black 2px;
+}
+
+.tableHeader{
+    border: solid black 2px;
+    background: darkseagreen;
+}
+
+.tableRowCurrentDate{
+    border: solid black 2px;
+    background: mediumseagreen;
+}
+
+

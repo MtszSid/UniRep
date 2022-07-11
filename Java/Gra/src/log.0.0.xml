@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="windows-1250" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-11-18T15:07:06.703724500Z</date>
+  <millis>1637248026703</millis>
+  <nanos>724500</nanos>
+  <sequence>0</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Imie: Mateusz</message>
+</record>
+<record>
+  <date>2021-11-18T15:07:11.937608Z</date>
+  <millis>1637248031937</millis>
+  <nanos>608000</nanos>
+  <sequence>1</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 1/2 (Za mało)</message>
+</record>
+<record>
+  <date>2021-11-18T15:07:17.194091300Z</date>
+  <millis>1637248037194</millis>
+  <nanos>91300</nanos>
+  <sequence>2</sequence>
+  <logger>Logger</logger>
+  <level>WARNING</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Próba utworzenia liczby wymiernej z zerem w mianowniku.</message>
+</record>
+<record>
+  <date>2021-11-18T15:07:48.544657600Z</date>
+  <millis>1637248068544</millis>
+  <nanos>657600</nanos>
+  <sequence>3</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 3/4 (Za mało)</message>
+</record>
+<record>
+  <date>2021-11-18T15:07:51.062651400Z</date>
+  <millis>1637248071062</millis>
+  <nanos>651400</nanos>
+  <sequence>4</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 7/8 (Za dużo)</message>
+</record>
+<record>
+  <date>2021-11-18T15:07:55.456547800Z</date>
+  <millis>1637248075456</millis>
+  <nanos>547800</nanos>
+  <sequence>5</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Strzał: 7/9 (Zgadłeś)</message>
+</record>
+<record>
+  <date>2021-11-18T15:07:55.458756800Z</date>
+  <millis>1637248075458</millis>
+  <nanos>756800</nanos>
+  <sequence>6</sequence>
+  <logger>Logger</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Wygrał: Mateusz</message>
+</record>
+</log>
